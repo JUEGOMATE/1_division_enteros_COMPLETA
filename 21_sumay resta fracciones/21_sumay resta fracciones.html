@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Sumas y restas de fracciones</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:rgba(1,1,1,0);">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="575" height="555">
+      <param name="tamaño" value="575x555">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="&squot;&squot;">
+      <param name="expand" value="fit">
+      <param name="nombre" value="suma de fracciones">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E' ancho='100%' alto='100%' fijo='sí' escala='60' O.y='12' imagen='imagenpixa/AZUL.png' despl_imagen='expand.' red='no' red10='no' ejes='no' eje-x='no' eje-y='no' border_radius='25' ">
+      <param name="C_01" value="id='g1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(295,145,43,30)' decimales='0' fijo='no' visible='sí' label_color='ffffff' fuente puntos='22' ">
+      <param name="C_02" value="id='mcm1' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(295,185,43,30)' decimales='0' visible='sí' dibujar-si='mcm1#mcm' fuente puntos='22' ">
+      <param name="C_03" value="id='h2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(355,145,43,30)' decimales='0' fijo='no' visible='sí' fuente puntos='22' ">
+      <param name="C_04" value="id='mcm2' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(355,185,43,30)' decimales='0' visible='sí' dibujar-si='mcm2#mcm' fuente puntos='22' ">
+      <param name="C_05" value="id='i3' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(415,145,43,30)' decimales='0' fijo='no' visible='sí' fuente puntos='22' ">
+      <param name="C_06" value="id='mcm3' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(415,185,43,30)' decimales='0' visible='sí' dibujar-si='mcm3#mcm' fuente puntos='22' ">
+      <param name="C_07" value="id='j4' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(125,265,43,30)' decimales='0' fijo='no' visible='sí' dibujar-si='(j4#j)*(p>5)' fuente puntos='22' ">
+      <param name="C_08" value="id='mcm4' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(125,305,43,30)' decimales='0' visible='sí' dibujar-si='(mcm4#mcm)*(p>5)' fuente puntos='22' ">
+      <param name="C_09" value="id='k5' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(195,265,43,30)' decimales='0' visible='sí' dibujar-si='(k5#k)*(mcd>1)*(p>7)' fuente puntos='22' ">
+      <param name="C_10" value="id='m5' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(195,305,43,30)' decimales='0' visible='sí' dibujar-si='(m5#m)*(mcd>1)*(p>7)' fuente puntos='22' ">
+      <param name="C_11" value="id='m6' tipo='numérico' interfaz='campo de texto' región='interior' espacio='E' expresión='(160,185,43,30)' fijo='no' visible='sí' dibujar-si='(p=10)*(m=1)*(m6#k)' fuente puntos='22' ">
+      <param name="C_12" value="id='AUTO' interfaz='botón' tipo='numérico' región='interior' espacio='E' nombre='Otras fracciones' expresión='((E._w-140)/2,E._h-30,140,26)' color='ffffff' color-int='8e00ff' fuente puntos='19' acción='inicio' extra_style='borderRadius=6|overColor=009225' ">
+      <param name="A_01" value="id='a' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_02" value="id='b' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_03" value="id='c' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_04" value="id='d' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_05" value="id='e' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_06" value="id='f' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_07" value="id='mcm' algoritmo='sí' evaluar='siempre' inicio='mcm=d-1' hacer='mcm=mcm+1' mientras='(ent(mcm/d)<(mcm/d))+(ent(mcm/e)<(mcm/e))+(ent(mcm/f)<(mcm/f))' ">
+      <param name="A_08" value="id='g' expresión='(mcm/d)*a' evaluar='siempre' constante='sí' ">
+      <param name="A_09" value="id='h' expresión='(mcm/e)*b' evaluar='siempre' constante='sí' ">
+      <param name="A_10" value="id='i' expresión='(mcm/f)*c' evaluar='siempre' constante='sí' ">
+      <param name="A_11" value="id='j' expresión='g+h-i' evaluar='siempre' constante='sí' ">
+      <param name="A_12" value="id='aj' expresión='abs(j)' evaluar='siempre' constante='sí' ">
+      <param name="A_13" value="id='mcd' algoritmo='sí' evaluar='una-sola-vez' inicio='mcd=aj+1' hacer='mcd=mcd-1' mientras='(ent(aj/mcd)<(aj/mcd))+(ent(mcm/mcd)<(mcm/mcd))' ">
+      <param name="A_14" value="id='k' expresión='j/mcd' evaluar='siempre' constante='sí' ">
+      <param name="A_15" value="id='m' expresión='mcm/mcd' evaluar='siempre' constante='sí' ">
+      <param name="A_16" value="id='p' expresión='(mcm1=mcm)+(mcm2=mcm)+(mcm3=mcm)+(g1=mcm*a/d)+(h2=mcm*b/e)+(i3=mcm*c/f)+(j4=j)+(mcm4=mcm)+(k5=k)+(m5=m)+(m6=k)' evaluar='siempre' constante='sí' ">
+      <param name="G_01" value="espacio='E' tipo='punto' color='000000' coord_abs='no' expresión='(-2.85,2.3-0.25*(d=1))' texto='[a]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_02" value="espacio='E' tipo='punto' color='000000' coord_abs='no' expresión='(-1.85,2.3-0.25*(e=1))' texto='[b]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_03" value="espacio='E' tipo='punto' color='000000' coord_abs='no' expresión='(-0.85,2.3-0.25*(f=1))' texto='[c]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_04" value="espacio='E' tipo='punto' color='ff0000' dibujar-si='d>1' coord_abs='no' expresión='(-2.85,1.9)' texto='[d]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_05" value="espacio='E' tipo='punto' color='ff0000' dibujar-si='e>1' coord_abs='no' expresión='(-1.85,1.9)' texto='[e]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_06" value="espacio='E' tipo='punto' color='ff0000' dibujar-si='f>1' coord_abs='no' expresión='(-0.85,1.9)' texto='[f]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_07" value="espacio='E' tipo='segmento' color='00ffff' dibujar-si='d>1' coord_abs='no' expresión='(-3,1.85)(-2.4,1.85)' tamaño='0' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+      <param name="G_08" value="espacio='E' tipo='segmento' color='00ffff' dibujar-si='e>1' coord_abs='no' expresión='(-2,1.85)(-1.4,1.85)' tamaño='0' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+      <param name="G_09" value="espacio='E' tipo='segmento' color='00ffff' dibujar-si='f>1' coord_abs='no' expresión='(-1,1.85)(-0.4,1.85)' tamaño='0' ancho='2' font_family='Monospaced' fuente puntos='12' ">
+      <param name="G_10" value="espacio='E' tipo='punto' color='ffff00' coord_abs='no' expresión='(-2.3,2.1)' texto='+' tamaño='0' fuente puntos='22' ">
+      <param name="G_11" value="espacio='E' tipo='punto' color='ffff00' coord_abs='no' expresión='(-1.28,2.1)' texto='-' tamaño='0' fuente puntos='22' ">
+      <param name="G_12" value="espacio='E' tipo='punto' color='ffff00' coord_abs='no' expresión='(-0.3,2.1)' texto='=' tamaño='0' fuente puntos='22' ">
+      <param name="G_13" value="espacio='E' tipo='punto' color='00ff00' dibujar-si='g1=g' coord_abs='no' expresión='(0.2,2.4)' texto='[g]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_14" value="espacio='E' tipo='punto' color='00ff00' dibujar-si='h2=h' coord_abs='no' expresión='(1.2,2.4)' texto='[h]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_15" value="espacio='E' tipo='punto' color='ff00ff' dibujar-si='i3=i' coord_abs='no' expresión='(2.2,2.4)' texto='[i]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_16" value="espacio='E' tipo='punto' color='ff00ff' dibujar-si='mcm1=mcm' coord_abs='no' expresión='(0.2,1.8)' texto='[mcm]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_17" value="espacio='E' tipo='punto' color='ff00ff' dibujar-si='mcm2=mcm' coord_abs='no' expresión='(1.2,1.8)' texto='[mcm]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_18" value="espacio='E' tipo='punto' color='ff00ff' dibujar-si='mcm3=mcm' coord_abs='no' expresión='(2.2,1.8)' texto='[mcm]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_19" value="espacio='E' tipo='segmento' color='0000ff' coord_abs='no' expresión='(0.15,1.85)(0.8,1.85)' tamaño='0' ancho='2' ">
+      <param name="G_20" value="espacio='E0' tipo='segmento' color='azul' coord_abs='no' expresión='(1.15,1.85)(1.8,1.85)' tamaño='0' ancho='2' ">
+      <param name="G_21" value="espacio='E0' tipo='segmento' color='azul' coord_abs='no' expresión='(2.15,1.85)(2.8,1.85)' tamaño='0' ancho='2' ">
+      <param name="G_22" value="espacio='E' tipo='punto' color='0000ff' coord_abs='no' expresión='(0.85,2.1)' texto='+' tamaño='0' fuente puntos='22' ">
+      <param name="G_23" value="espacio='E' tipo='punto' color='0000ff' coord_abs='no' expresión='(1.9,2.1)' texto='-' tamaño='0' fuente puntos='22' ">
+      <param name="G_24" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='p>5' coord_abs='no' expresión='(2.85,2.1)' texto='=' tamaño='0' fuente puntos='22' ">
+      <param name="G_25" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='p>5' coord_abs='no' expresión='(-3,0.15)' texto='=' tamaño='0' fuente puntos='20' ">
+      <param name="G_26" value="espacio='E0' tipo='segmento' color='azul' dibujar-si='p>5' coord_abs='no' expresión='(-2.7,-0.15)(-2,-0.15)' tamaño='0' ancho='2' ">
+      <param name="G_27" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='(p>5)*(j4=j)' coord_abs='no' expresión='(-2.65,0.4)' texto='[j]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_28" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='(p>5)*(mcm4=mcm)' coord_abs='no' expresión='(-2.65,-0.2)' texto='[mcm]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_29" value="espacio='E0' tipo='segmento' color='azul' dibujar-si='(mcd>1)*(p>7)' coord_abs='no' expresión='(-1.6,-0.15)(-0.8,-0.15)' tamaño='0' ancho='2' ">
+      <param name="G_30" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='(aj>abs(k))*(p>7)' coord_abs='no' expresión='(-1.9,0.1)' texto='=' tamaño='0' fuente puntos='22' ">
+      <param name="G_31" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='(aj>abs(k))*(p>7)' coord_abs='no' expresión='(-1.5,0.4)' texto='[k]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_32" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='(aj>abs(k))*(p>7)' coord_abs='no' expresión='(-1.5,-0.2)' texto='[m]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_33" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='(m=1)*(p>9)' coord_abs='no' expresión='(-0.7,0.1)' texto='=' fijo='no' tamaño='0' fuente puntos='22' ">
+      <param name="G_34" value="espacio='E' tipo='punto' color='0000ff' dibujar-si='(p=11)*(m=1)' coord_abs='no' expresión='(-0.4,0.1)' texto='[k]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_35" value="espacio='E' tipo='punto' color='00a500' dibujar-si='(j4=j)*(mcm4=mcm)*(p=8+2*(mcd>1)+(m=1))' coord_abs='no' expresión='(0.5,0.5)' texto='BIEN' tamaño='0' fuente puntos='30' ">
+      <param name="G_36" value="espacio='E' tipo='texto' color='ffff00' coord_abs='no' expresión='(0,4.6)' texto='SUMA Y RESTA DE FRACCIONES' ancho='0.8' color_borde_texto='0000ff' fuente puntos='28' align='a_center' anchor='a_top_center' shadowOffsetX='1' shadowOffsetY='1' ">
+      <param name="G_37" value="espacio='E' tipo='imagen' coord_abs='no' expresión='(-3.1,-2.9,0.4,0.4)' archivo='imagenpixa/conejo4.png' ">
+      <param name="G_38" value="espacio='E' tipo='imagen' coord_abs='no' expresión='(3.4,-2.8,0.5,0.5)' archivo='imagenpixa/gato5r.png' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
