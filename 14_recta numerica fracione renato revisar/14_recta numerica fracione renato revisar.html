@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Ordenando fracciones</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:rgba(1,1,1,0);">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="600" height="425">
+      <param name="tamaño" value="600x425">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="&squot;&squot;">
+      <param name="expand" value="fit">
+      <param name="nombre" value="sort">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E0' ancho='100%' alto='100%' fijo='sí' escala='110' imagen='imagenpixa/campo5.jpg' despl_imagen='expand.' red='no' red10='no' ejes='no' eje-x='no' eje-y='no' border_width='5' border_color='ffc800' border_radius='6' ">
+      <param name="C_01" value="id='n1' tipo='gráfico' espacio='E0' color='0000ff' color-int='ff0000' tamaño='31' expresión='[-1.5,-0.5]' dibujar-si='0' ">
+      <param name="C_02" value="id='n2' tipo='gráfico' espacio='E0' color='0000ff' color-int='ff0000' tamaño='31' expresión='[-0.5,-0.5]' dibujar-si='0' ">
+      <param name="C_03" value="id='n3' tipo='gráfico' espacio='E0' color='0000ff' color-int='ff0000' tamaño='31' expresión='[0.5,-0.5]' dibujar-si='0' ">
+      <param name="C_04" value="id='n4' tipo='gráfico' espacio='E0' color='0000ff' color-int='ff0000' tamaño='31' expresión='[1.5,-0.5]' dibujar-si='0' ">
+      <param name="C_05" value="id='n5' interfaz='botón' tipo='numérico' región='interior' espacio='E0' nombre='Otro ejercicio' expresión='(230,340,150,40)' color='ffffff' color-int='0000ff' fuente puntos='22' acción='inicio' extra_style='borderRadius=80' ">
+      <param name="A_01" value="id='escala' expresión='100' evaluar='una-sola-vez' constante='si' ">
+      <param name="A_02" value="id='a1' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='si' ">
+      <param name="A_03" value="id='a2' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='si' ">
+      <param name="A_04" value="id='a3' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='si' ">
+      <param name="A_05" value="id='a4' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='si' ">
+      <param name="A_06" value="id='b1' expresión='ent(rnd*10)+1' evaluar='una-sola-vez' constante='si' ">
+      <param name="A_07" value="id='b2' algoritmo='sí' evaluar='una-sola-vez' inicio='b2=1+ent(rnd*10)' hacer='b2=1+ent(rnd*10)' mientras='a1/b1=a2/b2' ">
+      <param name="A_08" value="id='b3' algoritmo='sí' evaluar='una-sola-vez' inicio='b3=1+ent(rnd*10)' hacer='b3=1+ent(rnd*10)' mientras='(a1/b1=a3/b3)+(a2/b2=a3/b3)' ">
+      <param name="A_09" value="id='b4' algoritmo='sí' evaluar='una-sola-vez' inicio='b4=1+ent(rnd*10)' hacer='b4=1+ent(rnd*10)' mientras='(a1/b1=a4/b4)+(a2/b2=a4/b4)+(a3/b3=a4/b4)' ">
+      <param name="A_10" value="id='p1' expresión='a1/b1' evaluar='una-sola-vez' constante='si' ">
+      <param name="A_11" value="id='p2' expresión='a2/b2' evaluar='siempre' constante='si' ">
+      <param name="A_12" value="id='p3' expresión='a3/b3' evaluar='siempre' constante='si' ">
+      <param name="A_13" value="id='p4' expresión='a4/b4' evaluar='siempre' constante='si' ">
+      <param name="A_14" value="id='v1' expresión='p1*(abs(n1.x+1.5)<0.3)*(abs(n1.y-0.5)<0.3)+p2*(abs(n2.x+1.5)<0.3)*(abs(n2.y-0.5)<0.3)+p3*(abs(n3.x+1.5)<0.3)*(abs(n3.y-0.5)<0.3)+p4*(abs(n4.x+1.5)<0.3)*(abs(n4.y-0.5)<0.3)' tipo='variable' ">
+      <param name="A_15" value="id='v2' expresión='p1*(abs(n1.x+0.5)<0.3)*(abs(n1.y-0.5)<0.3)+p2*(abs(n2.x+0.5)<0.3)*(abs(n2.y-0.5)<0.3)+p3*(abs(n3.x+0.5)<0.3)*(abs(n3.y-0.5)<0.3)+p4*(abs(n4.x+0.5)<0.3)*(abs(n4.y-0.5)<0.3)' tipo='variable' ">
+      <param name="A_16" value="id='v3' expresión='p1*(abs(n1.x-0.5)<0.3)*(abs(n1.y-0.5)<0.3)+p2*(abs(n2.x-0.5)<0.3)*(abs(n2.y-0.5)<0.3)+p3*(abs(n3.x-0.5)<0.3)*(abs(n3.y-0.5)<0.3)+p4*(abs(n4.x-0.5)<0.3)*(abs(n4.y-0.5)<0.3)' tipo='variable' ">
+      <param name="A_17" value="id='v4' expresión='p1*(abs(n1.x-1.5)<0.3)*(abs(n1.y-0.5)<0.3)+p2*(abs(n2.x-1.5)<0.3)*(abs(n2.y-0.5)<0.3)+p3*(abs(n3.x-1.5)<0.3)*(abs(n3.y-0.5)<0.3)+p4*(abs(n4.x-1.5)<0.3)*(abs(n4.y-0.5)<0.3)' tipo='variable' ">
+      <param name="A_18" value="id='v' expresión='((v1<v2)+(v1=v2))*((v2<v3)+(v2=v3))*((v3<v4)+(v3=v4))*(v1>0)*(v2>0)*(v3>0)*(v4>0)' tipo='variable' ">
+      <param name="G_01" value="espacio='E0' tipo='segmento' fondo='sí' color='000000' coord_abs='no' expresión='(-2.5,0.5)(2.5,0.5)' tamaño='0' ancho='3' ">
+      <param name="G_02" value="espacio='E0' tipo='segmento' color='00ff00' coord_abs='no' expresión='(6.5,-0.5)(9.5,-0.5)' tamaño='0' ancho='2' ">
+      <param name="G_03" value="espacio='E0' tipo='punto' fondo='sí' color='000000' coord_abs='no' expresión='(-2.2,0.71)' texto='I' decimales='0' tamaño='0' fuente puntos='40' ">
+      <param name="G_04" value="espacio='E0' tipo='punto' fondo='sí' color='000000' coord_abs='no' expresión='(-2.15,1)' texto='0' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_05" value="espacio='E0' tipo='punto' fondo='sí' color='000000' coord_abs='no' expresión='(-2.4,0.66)' texto='<' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_06" value="espacio='E0' tipo='punto' fondo='sí' color='00ff00' coord_abs='no' expresión='(-1.5,0.5)' tamaño='30' ">
+      <param name="G_07" value="espacio='E0' tipo='punto' fondo='sí' color='00ff00' coord_abs='no' expresión='(-0.5,0.5)' tamaño='30' ">
+      <param name="G_08" value="espacio='E0' tipo='punto' fondo='sí' color='00ff00' coord_abs='no' expresión='(0.5,0.5)' tamaño='30' ">
+      <param name="G_09" value="espacio='E0' tipo='punto' fondo='sí' color='00ff00' coord_abs='no' expresión='(1.5,0.5)' tamaño='30' ">
+      <param name="G_10" value="espacio='E0' tipo='punto' color='00ffff' coord_abs='no' expresión='(n1.x,n1.y)' decimales='0' tamaño='28' ">
+      <param name="G_11" value="espacio='E0' tipo='punto' color='000000' coord_abs='no' expresión='(n1.x-0.1-0.05*(a1>9),n1.y+0.25)' texto='[a1]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_12" value="espacio='E0' tipo='punto' color='000000' coord_abs='no' expresión='(n1.x-0.1-0.05*(b1>9),n1.y)' texto='[b1]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_13" value="espacio='E0' tipo='segmento' color='0000ff' coord_abs='no' expresión='(n1.x-0.2,n1.y)(n1.x+0.2,n1.y)' tamaño='0' ancho='2' ">
+      <param name="G_14" value="espacio='E0' tipo='punto' color='ffff00' coord_abs='no' expresión='(n2.x,n2.y)' decimales='0' tamaño='28' ">
+      <param name="G_15" value="espacio='E0' tipo='punto' color='000000' coord_abs='no' expresión='(n2.x-0.1-0.05*(a2>9),n2.y+0.25)' texto='[a2]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_16" value="espacio='E0' tipo='punto' color='000000' coord_abs='no' expresión='(n2.x-0.1-0.05*(b2>9),n2.y)' texto='[b2]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_17" value="espacio='E0' tipo='segmento' color='0000ff' coord_abs='no' expresión='(n2.x-0.2,n2.y)(n2.x+0.2,n2.y)' tamaño='0' ancho='2' ">
+      <param name="G_18" value="espacio='E0' tipo='punto' color='ff00ff' coord_abs='no' expresión='(n3.x,n3.y)' decimales='0' tamaño='28' ">
+      <param name="G_19" value="espacio='E0' tipo='punto' color='000000' coord_abs='no' expresión='(n3.x-0.1-0.05*(a3>9),n3.y+0.25)' texto='[a3]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_20" value="espacio='E0' tipo='punto' color='000000' coord_abs='no' expresión='(n3.x-0.1-0.05*(b3>9),n3.y)' texto='[b3]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_21" value="espacio='E0' tipo='segmento' color='0000ff' coord_abs='no' expresión='(n3.x-0.2,n3.y)(n3.x+0.2,n3.y)' tamaño='0' ancho='2' ">
+      <param name="G_22" value="espacio='E0' tipo='punto' color='ffffff' coord_abs='no' expresión='(n4.x,n4.y)' decimales='0' tamaño='28' ">
+      <param name="G_23" value="espacio='E0' tipo='punto' color='000000' coord_abs='no' expresión='(n4.x-0.1-0.05*(a4>9),n4.y+0.25)' texto='[a4]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_24" value="espacio='E0' tipo='punto' color='000000' coord_abs='no' expresión='(n4.x-0.1-0.05*(b4>9),n4.y)' texto='[b4]' decimales='0' tamaño='0' fuente puntos='22' ">
+      <param name="G_25" value="espacio='E0' tipo='segmento' color='0000ff' coord_abs='no' expresión='(n4.x-0.2,n4.y)(n4.x+0.2,n4.y)' tamaño='0' ancho='2' ">
+      <param name="G_26" value="espacio='E0' tipo='punto' color='ffffff' dibujar-si='v' coord_abs='no' expresión='(-1.15,0)' texto='CORRECTO' decimales='0' tamaño='0' fuente puntos='56' ">
+      <param name="G_27" value="espacio='E0' tipo='segmento' color='ff0000' coord_abs='no' expresión='(6.5,-0.5)(9.5,-0.5)' tamaño='0' ancho='2' ">
+      <param name="G_28" value="espacio='E0' tipo='punto' fondo='sí' color='000000' coord_abs='no' expresión='(2.5,0.66)' texto='>' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_29" value="espacio='E0' tipo='texto' color='20303a' coord_abs='sí' expresión='(-6.4,-1.66)' texto='hOLA' decimales='0' ancho='1' fuente puntos='30' align='a_center' anchor='a_top_right' shadowColor='ffff00' ">
+      <param name="G_30" value="espacio='E0' tipo='texto' color='000000' coord_abs='sí' expresión='(180,310)' texto='Ubica las Fracciones en la Recta' ancho='1' fuente puntos='22' align='a_left' anchor='a_top_left' ">
+      <param name="G_31" value="espacio='E0' tipo='texto' color='ffff00' coord_abs='sí' expresión='(140,10)' texto='RECTA NUMÉRICA' ancho='1' color_borde_texto='ff00ff' fuente puntos='40' align='a_left' anchor='a_top_left' border_size='3' ">
+      <param name="G_32" value="espacio='E0' tipo='imagen' coord_abs='no' expresión='(2.3,-0.7,0.7,0.7)' archivo='imagenpixa/niñor.png' ">
+      <param name="G_33" value="espacio='E0' tipo='imagen' coord_abs='no' expresión='(-2.2,-0.9,0.35,0.35)' archivo='imagenpixa/conejoremov.png' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
