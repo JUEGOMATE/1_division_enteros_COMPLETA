@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="700" height="650">
+      <param name="tamaño" value="700x650">
+      <param name="decimal_symbol" value=",">
+      <param name="image_loader" value="&squot;&squot;">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' ancho='100%' alto='100%' fijo='sí' escala='72' O.x='-50' O.y='100' imagen='imagenpixa/100.jpg' despl_imagen='expand.' red='no' red10='no' ejes='no' border_width='5' border_color='0000ff' border_radius='6' ">
+      <param name="C_01" value="id='n1' tipo='gráfico' espacio='E1' color='222222' color-int='00ff00' tamaño='31' expresión='[-2.5+d,-1.55]' dibujar-si='0' ">
+      <param name="C_02" value="id='n2' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='31' expresión='[-2.5+(1+d)%6,-1.55]' dibujar-si='0' ">
+      <param name="C_03" value="id='n3' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='31' expresión='[-2.5+(2+d)%6,-1.55]' dibujar-si='0' ">
+      <param name="C_04" value="id='n4' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='31' expresión='[-2.5+(3+d)%6,-1.55]' dibujar-si='0' ">
+      <param name="C_05" value="id='n5' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='31' expresión='[-2.5+(4+d)%6,-1.55]' dibujar-si='0' ">
+      <param name="C_06" value="id='n6' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='31' expresión='[-2.5+(5+d)%6,-1.55]' dibujar-si='0' ">
+      <param name="C_07" value="id='n8' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Nuevo Ejercicio' expresión='(200,595,220,50)' color='222222' color-int='008dff' fuente puntos='19' acción='inicio' extra_style='borderRadius=60' ">
+      <param name="A_01" value="id='Oy' algoritmo='sí' evaluar='una-sola-vez' hacer='Oy=93' ">
+      <param name="A_02" value="id='b1' algoritmo='sí' evaluar='una-sola-vez' hacer='b1=ent(rnd*20)-10' ">
+      <param name="A_03" value="id='b2' algoritmo='sí' evaluar='una-sola-vez' hacer='b2=ent(rnd*20)-10' ">
+      <param name="A_04" value="id='b3' algoritmo='sí' evaluar='una-sola-vez' hacer='b3=ent(rnd*20)-10' ">
+      <param name="A_05" value="id='b4' algoritmo='sí' evaluar='una-sola-vez' hacer='b4=ent(rnd*20)-10' ">
+      <param name="A_06" value="id='b5' algoritmo='sí' evaluar='una-sola-vez' hacer='b5=ent(rnd*20)-10' ">
+      <param name="A_07" value="id='b6' algoritmo='sí' evaluar='una-sola-vez' hacer='b6=ent(rnd*20)-10' ">
+      <param name="A_08" value="id='e1' algoritmo='sí' evaluar='una-sola-vez' hacer='e1=ent(rnd*20)-10' ">
+      <param name="A_09" value="id='e2' algoritmo='sí' evaluar='una-sola-vez' hacer='e2=ent(rnd*20)-10' ">
+      <param name="A_10" value="id='e3' algoritmo='sí' evaluar='una-sola-vez' hacer='e3=ent(rnd*20)-10' ">
+      <param name="A_11" value="id='e4' algoritmo='sí' evaluar='una-sola-vez' hacer='e4=ent(rnd*20)-10' ">
+      <param name="A_12" value="id='e5' algoritmo='sí' evaluar='una-sola-vez' hacer='e5=ent(rnd*20)-10' ">
+      <param name="A_13" value="id='e6' algoritmo='sí' evaluar='una-sola-vez' hacer='e6=ent(rnd*20)-10' ">
+      <param name="A_14" value="id='p1' algoritmo='sí' evaluar='una-sola-vez' hacer='p1=b1+e1' ">
+      <param name="A_15" value="id='p2' algoritmo='sí' evaluar='una-sola-vez' hacer='p2=b2+e2' ">
+      <param name="A_16" value="id='p3' algoritmo='sí' evaluar='una-sola-vez' hacer='p3=b3+e3' ">
+      <param name="A_17" value="id='p4' algoritmo='sí' evaluar='una-sola-vez' hacer='p4=b4+e4' ">
+      <param name="A_18" value="id='p5' algoritmo='sí' evaluar='una-sola-vez' hacer='p5=b5+e5' ">
+      <param name="A_19" value="id='p6' algoritmo='sí' evaluar='una-sola-vez' hacer='p6=b6+e6' ">
+      <param name="A_20" value="id='d' algoritmo='sí' evaluar='una-sola-vez' hacer='d=ent(rnd*6)' ">
+      <param name="A_21" value="id='b' algoritmo='sí' evaluar='siempre' hacer='b=abs(a)>0?1:b' ">
+      <param name="A_22" value="id='v1' expresión='(0.5+p4)*(abs(n1.x-1.5)<0.3)*(abs(n1.y-4.5)<0.3)+(0.5+p1)*(abs(n2.x-1.5)<0.3)*(abs(n2.y-4.5)<0.3)+(0.5+p3)*(abs(n3.x-1.5)<0.3)*(abs(n3.y-4.5)<0.3)+(0.5+p6)*(abs(n4.x-1.5)<0.3)*(abs(n4.y-4.5)<0.3)+(0.5+p2)*(abs(n5.x-1.5)<0.3)*(abs(n5.y-4.5)<0.3)+(0.5+p5)*(abs(n6.x-1.5)<0.3)*(abs(n6.y-4.5)<0.3)' tipo='variable' ">
+      <param name="A_23" value="id='v2' expresión='(0.5+p4)*(abs(n1.x-1.5)<0.3)*(abs(n1.y-3.5)<0.3)+(0.5+p1)*(abs(n2.x-1.5)<0.3)*(abs(n2.y-3.5)<0.3)+(0.5+p3)*(abs(n3.x-1.5)<0.3)*(abs(n3.y-3.5)<0.3)+(0.5+p6)*(abs(n4.x-1.5)<0.3)*(abs(n4.y-3.5)<0.3)+(0.5+p2)*(abs(n5.x-1.5)<0.3)*(abs(n5.y-3.5)<0.3)+(0.5+p5)*(abs(n6.x-1.5)<0.3)*(abs(n6.y-3.5)<0.3)' tipo='variable' ">
+      <param name="A_24" value="id='v3' expresión='(0.5+p4)*(abs(n1.x-1.5)<0.3)*(abs(n1.y-2.5)<0.3)+(0.5+p1)*(abs(n2.x-1.5)<0.3)*(abs(n2.y-2.5)<0.3)+(0.5+p3)*(abs(n3.x-1.5)<0.3)*(abs(n3.y-2.5)<0.3)+(0.5+p6)*(abs(n4.x-1.5)<0.3)*(abs(n4.y-2.5)<0.3)+(0.5+p2)*(abs(n5.x-1.5)<0.3)*(abs(n5.y-2.5)<0.3)+(0.5+p5)*(abs(n6.x-1.5)<0.3)*(abs(n6.y-2.5)<0.3)' tipo='variable' ">
+      <param name="A_25" value="id='v4' expresión='(0.5+p4)*(abs(n1.x-1.5)<0.3)*(abs(n1.y-1.5)<0.3)+(0.5+p1)*(abs(n2.x-1.5)<0.3)*(abs(n2.y-1.5)<0.3)+(0.5+p3)*(abs(n3.x-1.5)<0.3)*(abs(n3.y-1.5)<0.3)+(0.5+p6)*(abs(n4.x-1.5)<0.3)*(abs(n4.y-1.5)<0.3)+(0.5+p2)*(abs(n5.x-1.5)<0.3)*(abs(n5.y-1.5)<0.3)+(0.5+p5)*(abs(n6.x-1.5)<0.3)*(abs(n6.y-1.5)<0.3)' tipo='variable' ">
+      <param name="A_26" value="id='v5' expresión='(0.5+p4)*(abs(n1.x-1.5)<0.3)*(abs(n1.y-0.5)<0.3)+(0.5+p1)*(abs(n2.x-1.5)<0.3)*(abs(n2.y-0.5)<0.3)+(0.5+p3)*(abs(n3.x-1.5)<0.3)*(abs(n3.y-0.5)<0.3)+(0.5+p6)*(abs(n4.x-1.5)<0.3)*(abs(n4.y-0.5)<0.3)+(0.5+p2)*(abs(n5.x-1.5)<0.3)*(abs(n5.y-0.5)<0.3)+(0.5+p5)*(abs(n6.x-1.5)<0.3)*(abs(n6.y-0.5)<0.3)' tipo='variable' ">
+      <param name="A_27" value="id='v6' expresión='(0.5+p4)*(abs(n1.x-1.5)<0.3)*(abs(n1.y+0.5)<0.3)+(0.5+p1)*(abs(n2.x-1.5)<0.3)*(abs(n2.y+0.5)<0.3)+(0.5+p3)*(abs(n3.x-1.5)<0.3)*(abs(n3.y+0.5)<0.3)+(0.5+p6)*(abs(n4.x-1.5)<0.3)*(abs(n4.y+0.5)<0.3)+(0.5+p2)*(abs(n5.x-1.5)<0.3)*(abs(n5.y+0.5)<0.3)+(0.5+p5)*(abs(n6.x-1.5)<0.3)*(abs(n6.y+0.5)<0.3)' tipo='variable' ">
+      <param name="G_01" value="espacio='E1' tipo='punto' fondo='sí' color='00ffff' coord_abs='no' expresión='(1.5,4.5)' tamaño='30' ">
+      <param name="G_02" value="espacio='E1' tipo='punto' fondo='sí' color='00ff00' coord_abs='no' expresión='(1.5,3.5)' tamaño='30' ">
+      <param name="G_03" value="espacio='E1' tipo='punto' fondo='sí' color='c0c0c0' coord_abs='no' expresión='(1.5,2.5)' tamaño='30' ">
+      <param name="G_04" value="espacio='E1' tipo='punto' fondo='sí' color='ffff00' coord_abs='no' expresión='(1.5,1.5)' tamaño='30' ">
+      <param name="G_05" value="espacio='E1' tipo='punto' fondo='sí' color='ffafaf' coord_abs='no' expresión='(1.5,0.5)' tamaño='30' ">
+      <param name="G_06" value="espacio='E1' tipo='punto' fondo='sí' color='0000ff' coord_abs='no' expresión='(1.5,-0.5)' tamaño='30' ">
+      <param name="G_07" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b1' coord_abs='no' expresión='(-2,4.8)' texto='(+[b1]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_08" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b2' coord_abs='no' expresión='(-2,3.7)' texto='(+[b2]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_09" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b3' coord_abs='no' expresión='(-2,2.7)' texto='(+[b3]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_10" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b4' coord_abs='no' expresión='(-2,1.7)' texto='(+[b4]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_11" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b5' coord_abs='no' expresión='(-2,0.7)' texto='(+[b5]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_12" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b6' coord_abs='no' expresión='(-2,-0.3)' texto='(+[b6]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_13" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b1<1' coord_abs='no' expresión='(-2,4.8)' texto='([b1]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_14" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b2<1' coord_abs='no' expresión='(-2,3.7)' texto='([b2]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_15" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b3<1' coord_abs='no' expresión='(-2,2.7)' texto='([b3]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_16" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b4<1' coord_abs='no' expresión='(-2,1.7)' texto='([b4]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_17" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b5<1' coord_abs='no' expresión='(-2,0.7)' texto='([b5]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_18" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='b6<1' coord_abs='no' expresión='(-2,-0.3)' texto='([b6]) +' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_19" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e1' coord_abs='no' expresión='(-0.5,4.8)' texto='(+[e1])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_20" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e2' coord_abs='no' expresión='(-0.5,3.7)' texto='(+[e2])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_21" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e3' coord_abs='no' expresión='(-0.5,2.7)' texto='(+[e3])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_22" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e4' coord_abs='no' expresión='(-0.5,1.7)' texto='(+[e4])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_23" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e5' coord_abs='no' expresión='(-0.5,0.7)' texto='(+[e5])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_24" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e6' coord_abs='no' expresión='(-0.5,-0.3)' texto='(+[e6])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_25" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e1<1' coord_abs='no' expresión='(-0.5,4.8)' texto='([e1])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_26" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e2<1' coord_abs='no' expresión='(-0.5,3.7)' texto='([e2])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_27" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e3<1' coord_abs='no' expresión='(-0.5,2.7)' texto='([e3])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_28" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e4<1' coord_abs='no' expresión='(-0.5,1.7)' texto='([e4])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_29" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e5<1' coord_abs='no' expresión='(-0.5,0.7)' texto='([e5])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_30" value="espacio='E1' tipo='punto' fondo='sí' color='000000' dibujar-si='e6<1' coord_abs='no' expresión='(-0.5,-0.3)' texto='([e6])=' decimales='0' tamaño='0' fuente puntos='30' ">
+      <param name="G_31" value="espacio='E1' tipo='punto' color='ff00ff' coord_abs='no' expresión='(n1.x,n1.y)' decimales='0' tamaño='28' ">
+      <param name="G_32" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p4>-1)*(p4<10)' coord_abs='no' expresión='(n1.x-0.1,n1.y+0.2)' texto='[p4]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_33" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p4<0)+(p4>9)' coord_abs='no' expresión='(n1.x-0.25,n1.y+0.2)' texto='[p4]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_34" value="espacio='E1' tipo='punto' color='ff00ff' coord_abs='no' expresión='(n2.x,n2.y)' decimales='0' tamaño='28' ">
+      <param name="G_35" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p1>-1)*(p1<10)' coord_abs='no' expresión='(n2.x-0.1,n2.y+0.2)' texto='[p1]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_36" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p1<0)+(p1>9)' coord_abs='no' expresión='(n2.x-0.25,n2.y+0.2)' texto='[p1]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_37" value="espacio='E1' tipo='punto' color='ff00ff' coord_abs='no' expresión='(n3.x,n3.y)' decimales='0' tamaño='28' ">
+      <param name="G_38" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p3>-1)*(p3<10)' coord_abs='no' expresión='(n3.x-0.1,n3.y+0.2)' texto='[p3]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_39" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p3<0)+(p3>9)' coord_abs='no' expresión='(n3.x-0.25,n3.y+0.2)' texto='[p3]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_40" value="espacio='E1' tipo='punto' color='ff00ff' coord_abs='no' expresión='(n4.x,n4.y)' decimales='0' tamaño='28' ">
+      <param name="G_41" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p6>-1)*(p6<10)' coord_abs='no' expresión='(n4.x-0.1,n4.y+0.2)' texto='[p6]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_42" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p6<0)+(p6>9)' coord_abs='no' expresión='(n4.x-0.25,n4.y+0.2)' texto='[p6]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_43" value="espacio='E1' tipo='punto' color='ff00ff' coord_abs='no' expresión='(n5.x,n5.y)' decimales='0' tamaño='28' ">
+      <param name="G_44" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p2>-1)*(p2<10)' coord_abs='no' expresión='(n5.x-0.1,n5.y+0.2)' texto='[p2]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_45" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p2<0)+(p2>9)' coord_abs='no' expresión='(n5.x-0.25,n5.y+0.2)' texto='[p2]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_46" value="espacio='E1' tipo='punto' color='ff00ff' coord_abs='no' expresión='(n6.x,n6.y)' decimales='0' tamaño='28' ">
+      <param name="G_47" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p5>-1)*(p5<10)' coord_abs='no' expresión='(n6.x-0.1,n6.y+0.2)' texto='[p5]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_48" value="espacio='E1' tipo='punto' color='000000' dibujar-si='(p5<0)+(p5>9)' coord_abs='no' expresión='(n6.x-0.25,n6.y+0.2)' texto='[p5]' decimales='0' tamaño='0' fuente puntos='24' ">
+      <param name="G_49" value="espacio='E1' tipo='punto' color='0000ff' dibujar-si='(p1+0.5=v1)*(p2+0.5=v2)*(p3+0.5=v3)*(p4+0.5=v4)*(p5+0.5=v5)*(p6+0.5=v6)' coord_abs='no' expresión='(-2.45,-1.2)' texto='Muy Bien!!!' decimales='0' tamaño='0' negrita='sí' fuente puntos='56' ">
+      <param name="G_50" value="espacio='E1' tipo='texto' color='0000ff' coord_abs='sí' expresión='(120,0)' texto='Suma de Números Enteros' ancho='1' color_borde_texto='ffff00' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+      <param name="G_51" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(4.6,0.9,0.7,0.7)' archivo='imagenpixa/boy_vertical.png' ">
+      <param name="G_52" value="espacio='E1' tipo='imagen' dibujar-si='(p1+0.5=v1)*(p2+0.5=v2)*(p3+0.5=v3)*(p4+0.5=v4)*(p5+0.5=v5)*(p6+0.5=v6)' coord_abs='no' expresión='(-3.3,-1.4,0.6,0.6)' archivo='imagenpixa/mikeyr.png' ">
+      <param name="G_53" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(3.8,4.5,0.5,0.5)' archivo='imagenpixa/pajaro_r.png' ">
+      <param name="G_54" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(3.8,-2.5,0.2,0.2)' archivo='imagenpixa/tortuga-r.png' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
