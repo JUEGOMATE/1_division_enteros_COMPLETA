@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Representación gráfica de números enteros</title>
+  <link rel="stylesheet" href="../fonts/font3.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <link rel="stylesheet" href="../fonts/font4.css" type="text/css">
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:rgba(1,1,1,0);">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="650" height="300">
+      <param name="tamaño" value="650x300">
+      <param name="decimal_symbol" value=",">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="sí">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' ancho='100%' alto='100%' fijo='sí' escala='28' imagen='imagenpixa/PIZARR2.jpg' despl_imagen='expand.' fondo='ffffffff' red='00ffff' red10='808080' ejes='404040' border_width='3' border_color='ffc800' ">
+      <param name="C_01" value="id='g1' tipo='gráfico' espacio='fondo' color='222222' color-int='f0f8ff' tamaño='5' expresión='(-5,-2)' dibujar-si='0' ">
+      <param name="C_02" value="id='g2' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='5' expresión='(-3,-2)' dibujar-si='0' ">
+      <param name="C_03" value="id='g3' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='5' expresión='(-1,-2)' dibujar-si='0' ">
+      <param name="C_04" value="id='g4' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='5' expresión='(1,-2)' dibujar-si='0' ">
+      <param name="C_05" value="id='g5' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='5' expresión='(3,-2)' dibujar-si='0' ">
+      <param name="C_06" value="id='g6' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='5' expresión='(5,-2)' dibujar-si='0' ">
+      <param name="C_07" value="id='n7' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Otro ejercicio' expresión='(10,260,130,30)' color='000000' color-int='00ff00' font_family='Serif' fuente puntos='18' imagen='vacio.gif' acción='inicio' extra_style='border=1|borderRadius=10|borderColor=ffffff|overColor=e0a12b|downColor=ff0000|font=sansSerif|shadowTextColor=000000|shadowBoxColor=808080' ">
+      <param name="A_01" value="id='n1' expresión='ent(rnd*22)-11' evaluar='una-sola-vez' constante='sí' ">
+      <param name="A_02" value="id='n2' algoritmo='sí' evaluar='una-sola-vez' inicio='n2=ent(rnd*22)-11' hacer='n2=ent(rnd*22)-11' mientras='n2=n1' ">
+      <param name="A_03" value="id='n3' algoritmo='sí' evaluar='una-sola-vez' inicio='n3=ent(rnd*22)-11' hacer='n3=ent(rnd*22)-11' mientras='(n3=n1)+(n3=n2)' ">
+      <param name="A_04" value="id='n4' algoritmo='sí' evaluar='una-sola-vez' inicio='n4=ent(rnd*22)-11' hacer='n4=ent(rnd*22)-11' mientras='(n4=n1)+(n4=n2)+(n4=n3)' ">
+      <param name="A_05" value="id='n5' algoritmo='sí' evaluar='una-sola-vez' inicio='n5=ent(rnd*23)-11' hacer='n5=ent(rnd*22)-11' mientras='(n5=n1)+(n5=n2)+(n5=n3)+(n5=n4)' ">
+      <param name="A_06" value="id='n6' algoritmo='sí' evaluar='una-sola-vez' inicio='n6=ent(rnd*23)-11' hacer='n6=ent(rnd*22)-11' mientras='(n6=n1)+(n6=n2)+(n6=n3)+(n6=n4)+(n6=n5)' ">
+      <param name="A_07" value="id='v1' expresión='(abs(g1.x-n1)<0.2)*(abs(g1.y)<0.2)' tipo='variable' ">
+      <param name="A_08" value="id='v2' expresión='(abs(g2.x-n2)<0.2)*(abs(g2.y)<0.2)' tipo='variable' ">
+      <param name="A_09" value="id='v3' expresión='(abs(g3.x-n3)<0.2)*(abs(g3.y)<0.2)' tipo='variable' ">
+      <param name="A_10" value="id='v4' expresión='(abs(g4.x-n4)<0.2)*(abs(g4.y)<0.2)' tipo='variable' ">
+      <param name="A_11" value="id='v5' expresión='(abs(g5.x-n5)<0.2)*(abs(g5.y)<0.2)' tipo='variable' ">
+      <param name="A_12" value="id='v6' expresión='(abs(g6.x-n6)<0.2)*(abs(g6.y)<0.2)' tipo='variable' ">
+      <param name="G_01" value="espacio='E1' tipo='punto' color='ff0000' coord_abs='no' expresión='(0,0.2)' texto='0' decimales='0' tamaño='0' ">
+      <param name="G_02" value="espacio='E1' tipo='punto' color='ffff00' coord_abs='no' expresión='(g1.x,g1.y)' decimales='0' tamaño='5' ">
+      <param name="G_03" value="espacio='E1' tipo='punto' color='000000' dibujar-si='n1' coord_abs='no' expresión='(g1.x-0.15,g1.y+0.2)' texto='  +[n1]' decimales='0' tamaño='0' ">
+      <param name="G_04" value="espacio='E1' tipo='punto' color='000000' dibujar-si='n1<1' coord_abs='no' expresión='(g1.x-0.15,g1.y+0.2)' texto='  [n1]' decimales='0' tamaño='0' ">
+      <param name="G_05" value="espacio='E1' tipo='punto' color='ffff00' coord_abs='no' expresión='(g2.x,g2.y)' decimales='0' tamaño='5' ">
+      <param name="G_06" value="espacio='E1' tipo='punto' color='000000' dibujar-si='n2' coord_abs='no' expresión='(g2.x-0.15,g2.y+0.2)' texto='  +[n2]' decimales='0' tamaño='0' ">
+      <param name="G_07" value="espacio='E1' tipo='punto' color='000000' dibujar-si='n2<1' coord_abs='no' expresión='(g2.x-0.15,g2.y+0.2)' texto='  [n2]' decimales='0' tamaño='0' ">
+      <param name="G_08" value="espacio='E1' tipo='punto' color='ffff00' coord_abs='no' expresión='(g3.x,g3.y)' decimales='0' tamaño='5' ">
+      <param name="G_09" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='n3' coord_abs='no' expresión='(g3.x-0.15,g3.y+0.2)' texto='  +[n3]' decimales='0' tamaño='0' ">
+      <param name="G_10" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='n3<1' coord_abs='no' expresión='(g3.x-0.15,g3.y+0.2)' texto='  [n3]' decimales='0' tamaño='0' ">
+      <param name="G_11" value="espacio='E1' tipo='punto' color='ffff00' coord_abs='no' expresión='(g4.x,g4.y)' decimales='0' tamaño='5' ">
+      <param name="G_12" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='n4' coord_abs='no' expresión='(g4.x-0.15,g4.y+0.2)' texto='  +[n4]' decimales='0' tamaño='0' ">
+      <param name="G_13" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='n4<1' coord_abs='no' expresión='(g4.x-0.15,g4.y+0.2)' texto='  [n4]' decimales='0' tamaño='0' ">
+      <param name="G_14" value="espacio='E1' tipo='punto' color='ffff00' coord_abs='no' expresión='(g5.x,g5.y)' decimales='0' tamaño='5' ">
+      <param name="G_15" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='n5' coord_abs='no' expresión='(g5.x-0.15,g5.y+0.2)' texto='  +[n5]' decimales='0' tamaño='0' ">
+      <param name="G_16" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='n5<1' coord_abs='no' expresión='(g5.x-0.15,g5.y+0.2)' texto='  [n5]' decimales='0' tamaño='0' ">
+      <param name="G_17" value="espacio='E1' tipo='punto' color='ffff00' coord_abs='no' expresión='(g6.x,g6.y)' decimales='0' tamaño='5' ">
+      <param name="G_18" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='n6' coord_abs='no' expresión='(g6.x-0.15,g6.y+0.2)' texto='  +[n6]' decimales='0' tamaño='0' ">
+      <param name="G_19" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='n6<1' coord_abs='no' expresión='(g6.x-0.15,g6.y+0.2)' texto='  [n6]' decimales='0' tamaño='0' ">
+      <param name="G_20" value="espacio='E1' tipo='punto' color='0000ff' dibujar-si='v1+v2+v3+v4+v5+v6=6' coord_abs='no' expresión='(-5,4)' texto='¡¡¡Muy Bien!!!' tamaño='0' fuente puntos='52' ">
+      <param name="G_21" value="espacio='E1' tipo='imagen' dibujar-si='v1+v2+v3+v4+v5+v6=6' coord_abs='no' expresión='(10,1,0.40,0.40)' archivo='imagenpixa\alumno177.png' ">
+      <param name="G_22" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(0,0.5,0.15,0.15)' archivo='imagenpixa\conejo1remove.png' ">
+      <param name="G_23" value="espacio='E1' tipo='texto' color='0000ff' coord_abs='sí' expresión='(200,20)' texto='RECTA NUMÉRICA' ancho='1' color_borde_texto='00ff00' fuente puntos='30' align='a_left' anchor='a_top_left' ">
+      <param name="G_24" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(0,0.5,0.15,0.15)' archivo='imagenpixa\conejo1remove.png' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
